@@ -1,5 +1,6 @@
 # Curio Seeker Pipeline Setup 
-This guide walks through setting up and running the Curio Seeker v3.0.0 pipeline for spatial transcriptomics analysis on SciNet's Narval HPC system
+This guide walks through setting up and running the [Curio Seeker v3.0.0 pipeline for spatial transcriptomics](https://knowledgebase.curiobioscience.com/bioinformatics/seeker-local-installation/) analysis on SciNet's Narval HPC system
+
 
 - **Important:** Since compute nodes are offline, all containers must be downloaded and transferred beforehand
 
@@ -66,6 +67,11 @@ Create `samplesheet.csv` with the following format:
 sample,experiment_date,barcode_file,fastq_1,fastq_2,genome
 sample1,yyyy-mm-dd,/path/to/${Tile_ID}_BeadBarcodes.txt,/path/to/R1.fastq.gz,/path/to/R2.fastq.gz,mRatBN7.2
 ```
+Note about Barcode Files:
+The barcode_file (e.g., `${Tile_ID}_BeadBarcodes.txt`) must be obtained from:
+
+- Your experimental metadata provided by the lab team running the Curio spatial transcriptomics experiment
+- [Curio Bead Barcode Whitelist Retrieval website](https://knowledgebase.curiobioscience.com/bioinformatics/tile-barcode/)
 
 ## 4. SLURM Configuration
 We have included a version of `slurm.config` used on Narval.
