@@ -1,0 +1,2 @@
+sample,experiment_date,barcode_file,fastq_1,fastq_2,genome
+B40,2024-03-31,/home/dhoward/scratch/mommybrain/barcodes/B0123_007_BeadBarcodes.txt,/home/dhoward/scratch/mommybrain/B40_merged_R1.fastq.gz,/home/dhoward/scratch/mommybrain/B40_merged_R2.fastq.gz,mRatBN7.2
